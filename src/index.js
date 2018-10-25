@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from './App'
+import IncrementBtn from './component/IncrementBtn'
 
 const renderDom = Component => {
     render(
@@ -8,4 +8,4 @@ const renderDom = Component => {
         document.getElementById('app')
     );
 }
-renderDom(App);
+renderDom(IncrementBtn);
