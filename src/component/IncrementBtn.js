@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
+import {Button} from 'antd';
 
-import App from '../App';
-
-export default class Button extends React.Component {
+export default class IncrButton extends React.Component {
     constructor(props) {
         super(props);
         this.state = {data: 0};
@@ -15,7 +14,6 @@ export default class Button extends React.Component {
     render() {
         return (
             <div>
-                <App/>
                 <button onClick = {this.setNewNumber}>INCREMENT</button>
                 <Content myNumber = {this.state.data}></Content>
             </div>

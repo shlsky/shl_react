@@ -1,6 +1,13 @@
 {
   "presets": [
     "es2015",
-    "react"
+    "react",
+    "stage-0"  //
+  ],
+  "plugins": [
+    ["import", { "libraryName": "antd", "style": "css" },// `style: true` 会加载 less 文件
+      "transform-decorators-legacy",
+      "transform-class-properties", //transform-class-properties 主要是解决 es6 中使用class声明中 ：defaultProps={} 不支持的问题。需要使用 stage-0 或者 该插件转义
+      "jsx-control-statements"]
   ]
 }
